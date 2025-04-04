@@ -1,2 +1,2 @@
 # first-project-santimulet12
-Santiago Mulet soy yo
+Hola a todos, soy Santiago Mulet. Me gusta ir al gimnasio, comer y todo el mundo de la informática
