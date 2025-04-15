@@ -11,7 +11,8 @@ class App {
 }
 
 fun main() {
-    val name: String = "Santi"
-    var age = 16
+    val name: String = "Santi" //constante definida con la siguiente sintaxis: val nombre_de_variable: <tipo_dato> = dato 
+    var age = 16 //variable definida con la siguiente sintaxis: var nombre_de_variable = dato
     println("Hola me llamo $name tengo $age, pero este año cumplo ${age + 1}")
+
 }
