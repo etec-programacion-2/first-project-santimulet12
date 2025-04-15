@@ -3,12 +3,26 @@
  */
 package org.example
 
-import kotlin.test.Test
-import kotlin.test.assertNotNull
+import java.util.Scanner
 
-class AppTest {
-    @Test fun appHasAGreeting() {
-        val classUnderTest = App()
-        assertNotNull(classUnderTest.greeting, "app should have a greeting")
+fun main() {
+    val scanner = Scanner(System.`in`)
+
+    println("Por favor, ingresa tu nombre:")
+    val nombre = scanner.nextLine()
+
+    println("Hola, $nombre! Ahora ingresa tu edad:")
+    val edadString = scanner.nextLine() // Leemos la edad como String
+
+    // Intentamos convertir la edad a un entero
+    val edad = try {
+        edadString.toInt()
+    } catch (e: NumberFormatException) {
+        println("Entrada de edad inválida. Se usará 0 por defecto.")
+        0
     }
+
+    println("Tu nombre es $nombre y tienes $edad años.")
+
+    scanner.close() // Es importante cerrar el Scanner para liberar recursos
 }
