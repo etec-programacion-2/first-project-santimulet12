@@ -10,9 +10,15 @@ class App {
         }
 }
 
+fun suma(a:Int,b:Int): Int{ //Sintaxis de las funciones: fun nombre_funcion(param:tipo_dato, param:tipo_dato): tipo_dato_retorno{}
+    return a + b
+}
+
 fun main() {
     val name: String = "Santi" //constante definida con la siguiente sintaxis: val nombre_de_variable: <tipo_dato> = dato 
     var age = 16 //variable definida con la siguiente sintaxis: var nombre_de_variable = dato
     println("Hola me llamo $name tengo $age, pero este año cumplo ${age + 1}")
 
+    var result = suma(2,2)
+    println("la suma de 2 más 2 es $result")
 }
